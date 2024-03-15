@@ -1,0 +1,86 @@
+body {
+  background-color: #f6f1f1;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #6a5f82;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+h1 {
+  color: #aeaeae;
+  font-size: 50px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  grid-gap: 15px;
+  margin-top: 30px;
+}
+
+.cell {
+  width: 125px;
+  height: 125px;
+  border: 3px solid #dba1a1;
+  font-size: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #a2ac78;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cell:hover {
+  background-color: #3a5258;
+  transform: scale(1.05);
+}
+
+button {
+  margin-top: 30px;
+  padding: 14px 28px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #2e322e;
+  color: white;
+  border: none;
+  border-radius: 54px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.game-mode {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.game-mode-button {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #2d7db7;
+  color: #d8d8be;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.game-mode-button:hover {
+  background-color: #de7538;
+}
